@@ -51,9 +51,9 @@ dark = (170, 170, 170)
 light = (100, 100, 100)
 
 # 設定字體大小
-small_font = pg.font.Font("D:\\OneDrive - 國立台灣大學\\gp14\\gp14\\TaipeiSansTCBeta-Regular.ttf", 18)  # 字形路徑[Taipei Sans TCBeta]
-med_font = pg.font.Font("D:\\OneDrive - 國立台灣大學\\gp14\\gp14\\TaipeiSansTCBeta-Regular.ttf", 30)
-large_font = pg.font.Font("D:\\OneDrive - 國立台灣大學\\gp14\\gp14\\TaipeiSansTCBeta-Regular.ttf", 50)
+small_font = pg.font.Font("TaipeiSansTCBeta-Regular.ttf", 18)  # 字形路徑[Taipei Sans TCBeta]
+med_font = pg.font.Font("TaipeiSansTCBeta-Regular.ttf", 30)
+large_font = pg.font.Font("TaipeiSansTCBeta-Regular.ttf", 50)
 
 # 設定視窗
 width, height = 800, 800
@@ -345,12 +345,12 @@ def choice():
     back = False
     while not back:
         screen.fill(white)
-        background = pg.image.load("D:\\OneDrive - 國立台灣大學\\gp14\\gp14\\基本設定背景.png")  # 基本設定的背景圖
+        background = pg.image.load("基本設定背景.png")  # 基本設定的背景圖
         screen.blit(background, (-5, -5))
-        android_img = pg.image.load("D:\\OneDrive - 國立台灣大學\\gp14\\gp14\\android icon.png")  # android icon
-        ios_img = pg.image.load("D:\\OneDrive - 國立台灣大學\\gp14\\gp14\\ios icon.png")  # ios icon
-        indi_img = pg.image.load("D:\\OneDrive - 國立台灣大學\\gp14\\gp14\\個人 icon.png")  # 個人 icon
-        group_img = pg.image.load("D:\\OneDrive - 國立台灣大學\\gp14\\gp14\\群組 icon.png")  # 群組 icon
+        android_img = pg.image.load("android icon.png")  # android icon
+        ios_img = pg.image.load("ios icon.png")  # ios icon
+        indi_img = pg.image.load("個人 icon.png")  # 個人 icon
+        group_img = pg.image.load("群組 icon.png")  # 群組 icon
 
         screen.blit(android_img, (204, 655))
         screen.blit(ios_img, (306, 655))
@@ -418,7 +418,7 @@ def game_intro():
         Data.system = ''  # 系統選擇清空
 
         screen.fill(white)
-        background = pg.image.load("D:\\OneDrive - 國立台灣大學\\gp14\\gp14\\遊戲首頁背景.png")  # 遊戲首頁背景
+        background = pg.image.load("遊戲首頁背景.png")  # 遊戲首頁背景
         screen.blit(background, (-5, -5))
 
         message_to_screen_center("歡迎來到遊戲", black, -160, 'medium')
